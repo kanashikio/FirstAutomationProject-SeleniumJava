@@ -54,7 +54,7 @@ public class loginCheckOutActions extends commonActions{
     public void addProducts(){
         logs.info("✦•┈๑⋅⋯ User adds products to cart ⋯⋅๑┈•✦ ");
         try{
-            scrolldown();
+            scrollDown();
             //reads spreadsheet column data (from excelReader class)
             List<String> products = excelReader.getColumnData(
                     "src/test/java/testData/try-data.xlsx",
@@ -127,7 +127,7 @@ public class loginCheckOutActions extends commonActions{
         try{ //reads and stores data from productsData sheet in Excel
             Map<String, String> payment = excelReader.getRowData(excelPath, "productsData",1);
 
-            scrolldown();
+            scrollDown();
             //inputs payment details
             loginCheckOut.cardNameInput.sendKeys(payment.get("cardName"));
             loginCheckOut.cardNumberInput.sendKeys(payment.get("cardNum").replace(".0", "").trim());

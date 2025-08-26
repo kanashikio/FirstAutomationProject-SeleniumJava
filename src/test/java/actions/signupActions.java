@@ -89,7 +89,7 @@ public class signupActions extends commonActions{
         logs.info("✦•┈๑⋅⋯ User enters details ⋯⋅๑┈•✦ ");
         try{
             waitForWebElementToAppear(signUp.enterAccInfoDisplay);
-            scrolldown();
+            scrollDown();
             //enters other details: password and birthday
             signUp.passwordField.sendKeys(data.get("password"));
             dropDownValue(signUp.days, data.get("day").replace(".0", "").trim());

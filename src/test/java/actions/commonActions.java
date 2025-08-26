@@ -30,7 +30,7 @@ public abstract class commonActions extends baseUtil {
         return true;
     }
 
-    public void scrolldown(){
+    public void scrollDown(){
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("window.scrollBy(0,400)");
     }
